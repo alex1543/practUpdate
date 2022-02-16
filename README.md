@@ -7,7 +7,7 @@ Can be used for water metering, as in this case. However, this is one of the man
 ![image](https://user-images.githubusercontent.com/10297748/154268896-77387a77-9044-4d72-a7c7-2376b54bfe16.png)
 
 A separate page has been developed for printing, which displays values in reverse order and does not have extra styling.
-![image](https://user-images.githubusercontent.com/10297748/154266077-553df629-52c3-4a26-930f-c78d53848ef8.png)
+![image](https://user-images.githubusercontent.com/10297748/154269392-8ca88f3c-ff9d-4682-9d28-5f50919af1d2.png)
 
 Any row in the table can be edited from the pop-up modal window by clicking on the cell:
 ![image](https://user-images.githubusercontent.com/10297748/154266238-46fbad8f-516f-4016-a36d-18700e5b629c.png)
