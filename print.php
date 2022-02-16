@@ -24,9 +24,9 @@
 			
 			<tr class="cH">
 				<td style="width:65px;">Ст. 1</td>
-				<td style="width:220px;">Ст. 2</td>
-				<td style="width:120px;">Ст. 3</td>
-				<td style="width:80px;">Ст. 4</td>
+				<td style="width:120px;">Ст. 2</td>
+				<td style="width:70px;">Ст. 3</td>
+				<td style="width:180px;">Ст. 4</td>
 			</tr>	
 
 <?php 
