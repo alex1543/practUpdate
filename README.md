@@ -4,7 +4,7 @@ The site allows you to display a selection from the table. An example is shown i
 ![image](https://user-images.githubusercontent.com/10297748/154267083-61f369c1-ead6-4a30-99a4-25459d4a8ba9.png)
 
 Can be used for water metering, as in this case. However, this is one of the many other uses for this site and all these scripts. The site can work in conjunction with the ExLzFmySQL program to facilitate the entry of readings. The picture below shows the interface for adding records:
-![image](https://user-images.githubusercontent.com/10297748/154268470-7540ab74-7cb5-4b94-90c2-424bab2481f7.png)
+![image](https://user-images.githubusercontent.com/10297748/154268896-77387a77-9044-4d72-a7c7-2376b54bfe16.png)
 
 A separate page has been developed for printing, which displays values in reverse order and does not have extra styling.
 ![image](https://user-images.githubusercontent.com/10297748/154266077-553df629-52c3-4a26-930f-c78d53848ef8.png)
