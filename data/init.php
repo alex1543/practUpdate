@@ -35,6 +35,8 @@ if (isset($_GET['textId'])) {
 
 // начало вставки для DELETE
 if (isset($_GET['delid'])) {
+	$sqlTM = "DELETE FROM files WHERE id_my = " . $_GET["delid"];
+	$stmt = $pdoSet->query($sqlTM);
 	$sqlTM = "DELETE FROM myarttable WHERE id = " . $_GET["delid"];
 	$stmt = $pdoSet->query($sqlTM);
 }
