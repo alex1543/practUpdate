@@ -1,0 +1,78 @@
+body {background-color: #ffffff; color: #000000;}
+body, td, th, h1, h2 {font-family: sans-serif;}
+pre {margin: 0px; font-family: monospace;}
+a:link {color: #000099; text-decoration: none; background-color: #ffffff;}
+a:hover {text-decoration: underline;}
+table {border-collapse: collapse;}
+.center {text-align: center;}
+.center table { margin-left: auto; margin-right: auto; text-align: left;}
+.center th { text-align: center !important; }
+td, th { border: 1px solid #000000; font-size: 75%; vertical-align: baseline;}
+h1 {font-size: 150%;}
+h2 {font-size: 125%;}
+.p {text-align: left;}
+.e {background-color: #ccccff; font-weight: bold; color: #000000;}
+.h {background-color: #9999cc; font-weight: bold; color: #000000;}
+.v {background-color: #cccccc; color: #000000;}
+.vr {background-color: #cccccc; text-align: right; color: #000000;}
+img {float: right; border: 0px;}
+hr {width: 600px; background-color: #cccccc; border: 0px; height: 1px; color: #000000;}
+
+   [data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
+   
+p {margin:3px;padding:1px;}
+
+
+/* настройки таблицы */
+.tView1 {
+    width: 65%; /* Ширина таблицы */
+    table-layout: fixed; 
+}
+
+td {
+    padding: 5px; /* Поля в ячейках */
+    position: relative; /* Относительное позиционирование */
+	border: 1px solid #333;
+	height:20px;
+}
+td a {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; /* По ширине ячейки */
+    top: 0; bottom: 0; /* По высоте ячейки */
+    background: #D71920; /* Цвет фона */
+    color: #fff; /* Цвет ссылок */
+    padding: 5px; /* Поля вокруг текста */
+}
+
+a:visited {
+	background-color: white;
+}
+a:hover { 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    background-color: #e9efe6; /* Цвет фона при наведении */
+	cursor: pointer;
+}
+
+input:hover { 
+	background-color: #e9efe6;
+}
+/* настройки таблицы - КОНЕЦ */
