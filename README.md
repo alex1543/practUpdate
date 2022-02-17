@@ -12,6 +12,8 @@ Any row in the table can be edited from the pop-up modal window by clicking on t
 
 ![image](https://user-images.githubusercontent.com/10297748/154269969-9c145b40-0841-48e5-9129-a7411a50d06d.png)
 
+The first database will be created by itself, but if this does not happen, then you need to run the [test.sql](https://github.com/alex1543/practUpdate/files/8085998/test.sql.txt)
+import file from the source directory.
 It is possible to add and remove files through the download manager:
 
 ![image](https://user-images.githubusercontent.com/10297748/154267977-77d80ea0-ca9c-4319-98d9-9aa95de461d7.png)
