@@ -69,6 +69,7 @@ if (isset($_GET['id'])) {
 	$sqlTM = "SELECT * FROM files WHERE id_my=".$_GET['id'];
 	// echo $sqlTM;
 	$stmt = $pdoSet->query($sqlTM);
+	if (!$stmt) { echo '<h2 style=\'color:red;\'>Вам необходимо пересоздать базу данных (БД)!</h2>';} else {
 	$resultMF = $stmt->fetchAll();
 	if (@$resultMF[0][0] > 0) {
 		echo "<h2>Ранее закаченные файлы</h2>";
@@ -92,7 +93,7 @@ if (isset($_GET['id'])) {
 	} else {
 		echo "<h2>Ранее закаченных файлов не было для выбранной строки</h2>";		
 	}
-	
+	}
 }
 ?>
  
