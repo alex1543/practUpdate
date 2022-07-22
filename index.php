@@ -11,25 +11,22 @@
 
 <h1>Редактирование таблицы на PHP, JavaScript</h1>
 <!-- НАЧАЛО кнопка добавления -->
-<button style="margin:0px;padding:0px;width:63px;height:63px;"><a href="<?php 
+<button class="btMenu"><a href="<?php 
 $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $url = explode('?', $url);
 $url = $url[0];
 echo $url;
-?>" style="margin:0px;padding:0px;">
-	<img src="image/home.ico" alt="Главная" title="Перейти на главную страницу"
-          style="vertical-align:middle; height:60px;width:60px;float:left;cursor:pointer;"></a></button>
+?>">
+	<img src="image/home.ico" alt="Главная" title="Перейти на главную страницу" class="btMenuImg" /></a></button>
 <!-- КОНЕЦ кнопка добавления -->
 <!-- НАЧАЛО кнопка печати -->
-<button style="margin:0px;padding:0px;width:63px;height:63px;"><a href="print.php" target="_blank" style="margin:0px;padding:0px;">
-	<img src="image/print.ico" alt="Печать" title="Напечатать страницу"
-          style="vertical-align:middle; height:60px;width:60px;float:left;cursor:pointer;"></a></button>
+<button class="btMenu"><a href="print.php" target="_blank">
+	<img src="image/print.ico" alt="Печать" title="Напечатать страницу" class="btMenuImg" /></a></button>
 <!-- КОНЕЦ кнопка печати -->
 
 <!-- НАЧАЛО форма добавления -->
-<button style="margin:0px;padding:0px;width:63px;height:63px;" id="addView" onclick="alerted();">
-	<img src="image/add.ico" alt="Добавить" title="Добавить 1 строку"
-          style="vertical-align:middle; height:60px;width:60px;float:left;cursor:pointer;"></button>
+<button class="btMenu" id="addView" onclick="alerted();">
+	<img src="image/add.ico" alt="Добавить" title="Добавить 1 строку" class="btMenuImg" /></button>
 <script type="text/javascript">
 function alerted(){
 	var addForm = document.getElementById('addForm'); // найти элемент
@@ -46,10 +43,10 @@ function alerted(){
 	<br /><hr /><br />
 	<table>
 	<tr>
-		<td data-tooltip="Введите значение ячейки первого столбца"><input type="edit" name="text" value="test1"></td>
-		<td data-tooltip="Введите значение ячейки второго столбца"><input type="edit" name="description" value="test2"></td>
-		<td data-tooltip="Введите значение ячейки третьего столбца"><input type="edit" name="keywords" value="test3"></td>
-		<td><p data-tooltip="Нажмите на кнопку, чтобы добавить одну строку"><input type="submit" name="bt1" value="Добавить 1 строку" style="cursor:pointer;"></p></td>
+		<td><input type="edit" name="text" value="test string 1" /></td>
+		<td><input type="edit" name="description" value="test string 2" /></td>
+		<td><input type="edit" name="keywords" value="test string 3" /></td>
+		<td><input type="submit" name="bt1" value="Добавить" class="bt" /></td>
 		
 	</tr>
 	</table>
@@ -90,14 +87,12 @@ function alerted(){
    <p class="modal__title"><b>Отредактировать строку</b><br /></p>
    
 <form action="index.php" method="get">   
-   <input type="hidden" name="textId" id="textId" value="none 1 is error">
-   <br /><i style="font-size:12px;">Параметр #1:</i> <input type="edit" name="textEd1" id="textEd1" value="none 1 is error"><br />
-   <br /><i style="font-size:12px;">Параметр #2:</i> <input type="edit" name="textEd2" id="textEd2" value="none 2 is error"><br />
-   <br /><i style="font-size:12px;">Параметр #3:</i> <input type="edit" name="textEd3" id="textEd3" value="none 3 is error"><br />
-   <br /><a href="practUpload/index.php?id=error" id="aId" target="_blank">Добавить файлы</a><br /><br />
-   <p data-tooltip="Нажмите на кнопку, чтобы отредактировать строку">
-		<input type="submit" name="bt2" value="Отредактировать" style="cursor:pointer;">
-   </p>  
+   <input type="hidden" name="textId" id="textId" value="none 1 is error" />
+   <br /><i>Параметр #1:</i> <input type="edit" name="textEd1" id="textEd1" value="none 1 is error" /><br />
+   <br /><i>Параметр #2:</i> <input type="edit" name="textEd2" id="textEd2" value="none 2 is error" /><br />
+   <br /><i>Параметр #3:</i> <input type="edit" name="textEd3" id="textEd3" value="none 3 is error" /><br />
+   <br /><a href="practUpload/index.php?id=error" id="aId" target="_blank" class="bt">Добавить файлы</a>
+	<input type="submit" name="bt2" value="Отредактировать" class="bt" />
 </form>
    
 </div>
