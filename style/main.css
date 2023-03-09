@@ -121,13 +121,13 @@ input:hover {
 
 
 input[type="edit"] {
-    background: #fc3;
+    background: #3cb371;
     padding: 7px;
 	font-style: italic;
 }
 
 input[type="edit"]:hover {
-    background: #ffbd3c;
+    background: #5bc78c;
 }
 
 i {
