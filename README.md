@@ -10,7 +10,7 @@ Can be used for water metering, as in this case. However, this is one of the man
 
 Any row in the table can be edited from the pop-up modal window by clicking on the cell:
 
-![image](https://user-images.githubusercontent.com/10297748/154269969-9c145b40-0841-48e5-9129-a7411a50d06d.png)
+![image](https://user-images.githubusercontent.com/10297748/223990346-749eb5d7-662c-419d-976d-7a115a045863.png)
 
 The first database will be created by itself, but if this does not happen, then you need to run the [test.sql](https://github.com/alex1543/practUpdate/files/8085998/test.sql.txt)
 import file from the source directory.
