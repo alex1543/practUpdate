@@ -9,7 +9,7 @@
 <body>
 	<div class="center">
 
-<h1>Редактирование таблицы на PHP, JavaScript</h1>
+<h1><a href=".">Редактирование таблицы на JavaScript, PHP</a></h1>
 <!-- НАЧАЛО кнопка добавления -->
 <button class="btMenu"><a href="<?php 
 $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

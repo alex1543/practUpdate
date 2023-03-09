@@ -134,10 +134,16 @@ i {
 	font-size:12px;
 }
 
-h1 {
-    color: #46257d;
+h1 a {
+    color: #80adf8;
+	background-color: #fff;
+}
+h1 a:link {
+    color: #80adf8;
+	background-color: #fff;
 }
 
-h1:hover {
-    color: #311a57;
+h1 a:hover {
+    color: #4487f5;
+	background-color: #fff;
 }
