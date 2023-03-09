@@ -2,6 +2,8 @@
 
 The website allows you to display a selection from the table. An example is shown in the figure:
 
+![image](https://user-images.githubusercontent.com/10297748/223989625-4296cde6-201a-4f72-b7fd-32d463787501.png)
+
 ![image](https://user-images.githubusercontent.com/10297748/154267083-61f369c1-ead6-4a30-99a4-25459d4a8ba9.png)
 
 Can be used for water metering, as in this case. However, this is one of the many other uses for this website and all these scripts. The website can work in conjunction with the [ExLzFmySQL](https://github.com/alex1543/ExLzFmySQL) program to facilitate the entry of readings. The green button is for adding entries, which you can try out for yourself. The three buttons at the end of each line are for editing, adding files, and deleting a line. A separate page has been developed for printing, which displays values in reverse order and does not have extra styling. It is supposed that further the page through the menu will be sent to the printer. It is possible to adjust the size of the columns through the "print.php" file in the source directory.
