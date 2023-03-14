@@ -4,7 +4,7 @@
 		<title>Редактирование таблицы на PHP, JavaScript</title>
 		<meta name="ROBOTS" content="NOINDEX,NOFOLLOW,NOARCHIVE" />
         <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/pract.css" />
 	</head>
 	<body>
 		<div class="center">
@@ -13,27 +13,16 @@
 		<button class="btMenu"><a href="."><img src="image/home.ico" alt="Главная" title="Перейти на главную страницу" class="btMenuImg" /></a></button>
 		<button class="btMenu"><a href="print.php" target="_blank"><img src="image/print.ico" alt="Печать" title="Напечатать страницу" class="btMenuImg" /></a></button>
 
-		<!-- НАЧАЛО формы для добавления -->
+		<!-- НАЧАЛО формы для добавления ВСПЛЫВАЮЩАЯ СТРОКА -->
 		<button class="btMenu" id="addView" onclick="alerted();"><img src="image/add.ico" alt="Добавить" title="Добавить 1 строку" class="btMenuImg" /></button>
-		<script type="text/javascript">
-		function alerted(){
-			var addForm = document.getElementById('addForm'); // найти элемент
-			if (addForm.style.display=='none') {
-				addForm.style.display = 'block';} else {
-				addForm.style.display = 'none';
-			}
-		}
-		</script>
-		<!-- КОНЕЦ формы для добавления -->
-
-		<!-- НАЧАЛО форма добавления ВСПЛЫВАЮЩИЕ СТРОКИ -->
-		<form action="index.php" id="addForm" method="get" style="display:none;">
+		<script type="text/javascript">function alerted() { if (addForm.style.display != 'block') {addForm.style.display = 'block';} else {addForm.style.display = 'none';} }</script>
+		<form action="index.php" id="addForm" method="get">
 			<br /><hr /><br />
 			<table>
 			<tr>
-				<td><input type="edit" name="text" value="test string 1" /></td>
-				<td><input type="edit" name="description" value="test string 2" /></td>
-				<td><input type="edit" name="keywords" value="test string 3" /></td>
+				<td><input type="edit" name="text" value="Первая ячейка (ред.)" /></td>
+				<td><input type="edit" name="description" value="Вторая..." /></td>
+				<td><input type="edit" name="keywords" value="Третья..." /></td>
 				<td><input type="submit" name="bt1" value="Добавить" class="bt" /></td>
 				
 			</tr>
@@ -41,7 +30,7 @@
 			<p style="font-size:12px;"><i>(в базу <b>test</b>, таблицу <b>myarttable</b> в MySQL)</i></p>
 			<hr />
 		</form>
-		<!-- КОНЕЦ форма добавления ВСПЛЫВАЮЩИЕ СТРОКИ -->
+		<!-- КОНЕЦ формы для добавления ВСПЛЫВАЮЩАЯ СТРОКА -->
 
 		<br /><br />
 		<?php 
