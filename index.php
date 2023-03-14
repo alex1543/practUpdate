@@ -34,7 +34,7 @@
 
 		<br /><br />
 		<?php 
-			include "data/init.php";
+			include "db.php";
 
 			?><table class='tView1'><?php
 			for($iC=0; $iC<Count($resultMF); $iC++) {
@@ -77,12 +77,10 @@
 			<!-- Подложка под модальным окном -->
 		<div class="overlay js-overlay-modal"></div>
 			<!-- Дополнительный скрипт --> 
-		<script src="script/modal1.js"></script>
+		<script src="script/modal.js"></script>
 		<!-- КОНЕЦ модального окна -->
 	 
 		</div>
 		
-		<link rel="stylesheet" href="scrollup/scrollup.css" /><div id="scrollup"><img src="scrollup/7.png" class="up" title="Прокрутить вверх" /></div><script src="scrollup/scrollup.js"></script>
-
 	</body>
 </html>

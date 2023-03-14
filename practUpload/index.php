@@ -34,7 +34,7 @@ if (isset($_FILES["pictures"]["error"])) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../style/main2.css" />
+		<link rel="stylesheet" href="../style/pract.css" />
 		<title>Закачка файлов</title>
 		<meta name="ROBOTS" content="NOINDEX,NOFOLLOW,NOARCHIVE" />
         <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon" />
@@ -125,8 +125,6 @@ echo user_browser($_SERVER['HTTP_USER_AGENT']); ?>
  
 </i> 
 	</div>
-
-	<link rel="stylesheet" href="../scrollup/scrollup.css" /><div id="scrollup"><img src="../scrollup/7.png" class="up" title="Прокрутить вверх" /></div><script src="../scrollup/scrollup.js"></script>
 
 </body>
 </html>
